@@ -1,0 +1,148 @@
+@import "variables";
+@import "ui-variables";
+
+@trade-tools-height: 24px;
+@trade-header-height: 33px;
+@trade-border-width: 1px;
+@trade-border-color: #181818;
+
+.trade
+{
+    display: flex;
+    flex-direction: column;
+
+    .trade-tools
+    {
+        height: @trade-tools-height + 1;
+        align-items: center;
+        font-size: 11px;
+        color: #FFF;
+        -webkit-font-smoothing: auto;
+
+        .btn
+        {
+            height: @trade-tools-height;
+            line-height: @trade-tools-height;
+            border-right: 1px solid @pane-border-color;
+
+            &.symbol
+            {
+                font-family: 'Inconsolata';
+                font-size: 13px;
+                font-weight: 700;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                max-width: 180px;
+                color: @text-color;
+                -webkit-font-smoothing: antialiased;
+            }
+        }
+
+        .last-price
+        {
+            flex: 1;
+            text-align: right;
+            padding: 0 10px;
+        }
+    }
+
+    .trade-options
+    {
+        padding: 10px;
+    }
+
+    .trade-side
+    {
+        display: flex;
+        margin-bottom: 10px;
+
+        .btn
+        {
+            flex: 1;
+        }
+    }
+
+    .trade-type
+    {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .trade-execute
+    {
+        width: 100%;
+    }
+
+    .trade-label
+    {
+        font-size: 11px;
+        color: @text-color-subtle;
+        margin-bottom: 6px;
+        padding: 0 2px;
+    }
+
+    .input-unit
+    {
+        margin-bottom: 15px;
+    }
+
+    .trade-summary
+    {
+        font-size: 11px;
+        display: flex;
+        align-items: center;
+        margin-bottom: 15px;
+        color: @text-color-subtle;
+
+        .estimate
+        {
+            font-family: @font-family-serif;
+            font-weight: 700;
+            -webkit-font-smoothing: antialiased;
+            color: #FFF;
+            font-size: 12px;
+            flex: 1;
+            text-align: right;
+        }
+    }
+
+    .trade-account
+    {
+        padding: 10px;
+        border-bottom: 1px solid @pane-border-color;
+    }
+
+    .balance
+    {
+        display: flex;
+        align-items: center;
+        margin-bottom: 5px;
+        line-height: 20px;
+
+        &:last-child
+        {
+            margin-bottom: 0;
+        }
+
+        .currency
+        {
+            font-size: 12px;
+            color: @text-color-subtle;
+            font-weight: 500;
+        }
+
+        .ff
+        {
+            flex: 1;
+        }
+
+        .amount
+        {
+            font-family: @font-family-serif;
+            font-weight: 700;
+            -webkit-font-smoothing: antialiased;
+            color: #FFF;
+            font-size: 14px;
+        }
+    }
+}
