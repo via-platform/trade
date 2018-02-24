@@ -16,7 +16,8 @@
     "via": "*"
   },
   "dependencies": {
-    "etch": "^0.12.7"
+    "etch": "^0.12.7",
+    "underscore-plus": "^1.0.0"
   },
   "consumedServices": {
     "action-bar": {

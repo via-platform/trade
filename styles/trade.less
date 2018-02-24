@@ -11,39 +11,27 @@
     display: flex;
     flex-direction: column;
 
-    .trade-tools
+    .last-price
     {
-        height: @trade-tools-height + 1;
-        align-items: center;
+        flex: 1;
+        text-align: right;
+        padding: 0 10px;
         font-size: 11px;
-        color: #FFF;
-        -webkit-font-smoothing: auto;
+        color: @text-color-subtle;
+    }
 
-        .btn
-        {
-            height: @trade-tools-height;
-            line-height: @trade-tools-height;
-            border-right: 1px solid @pane-border-color;
+    .trade-container
+    {
+        flex: 1;
+        overflow: auto;
+    }
 
-            &.symbol
-            {
-                font-family: 'Inconsolata';
-                font-size: 13px;
-                font-weight: 700;
-                white-space: nowrap;
-                text-overflow: ellipsis;
-                max-width: 180px;
-                color: @text-color;
-                -webkit-font-smoothing: antialiased;
-            }
-        }
-
-        .last-price
-        {
-            flex: 1;
-            text-align: right;
-            padding: 0 10px;
-        }
+    .no-market
+    {
+        font-size: 11px;
+        text-align: center;
+        padding: 30px;
+        color: @text-color-subtle;
     }
 
     .trade-options
@@ -59,6 +47,21 @@
         .btn
         {
             flex: 1;
+            background-color: transparent;
+
+            &.selected
+            {
+                &.buy
+                {
+                    background: @primary-color-up;
+                }
+
+                &.sell
+                {
+                    background: @primary-color-down;
+                    color: @text-color;
+                }
+            }
         }
     }
 
@@ -71,6 +74,16 @@
     .trade-execute
     {
         width: 100%;
+
+        &.buy
+        {
+            color: @primary-color-up;
+        }
+
+        &.sell
+        {
+            color: @primary-color-down;
+        }
     }
 
     .trade-label
@@ -86,7 +99,7 @@
         margin-bottom: 15px;
     }
 
-    .trade-summary
+    .trade-estimate
     {
         font-size: 11px;
         display: flex;
@@ -109,7 +122,7 @@
     .trade-account
     {
         padding: 10px;
-        border-bottom: 1px solid @pane-border-color;
+        border-bottom: 1px solid @header-border-color;
     }
 
     .balance
