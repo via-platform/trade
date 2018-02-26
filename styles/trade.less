@@ -47,7 +47,6 @@
         .btn
         {
             flex: 1;
-            background-color: transparent;
 
             &.selected
             {
@@ -74,15 +73,37 @@
     .trade-execute
     {
         width: 100%;
+        font-weight: 700;
+        text-transform: uppercase;
+        height: 34px;
+        border-radius: 3px;
+        border: 0;
+        font-size: 12px;
+        font-family: @font-family;
 
         &.buy
         {
-            color: @primary-color-up;
+            background-color: @primary-color-up;
+            color: @header-background-color;
         }
 
         &.sell
         {
-            color: @primary-color-down;
+            background-color: @primary-color-down;
+            color: #FFF;
+        }
+
+        &.invalid
+        {
+            pointer-events: none;
+            background: @header-border-color;
+            color: @pane-background-color;
+        }
+
+        &.transmitting
+        {
+            opacity: 0.3;
+            pointer-events: none;
         }
     }
 
@@ -97,6 +118,16 @@
     .input-unit
     {
         margin-bottom: 15px;
+
+        &:last-child
+        {
+            margin-bottom: 5px;
+        }
+    }
+
+    .trade-summary
+    {
+        padding: 0 10px 10px;
     }
 
     .trade-estimate
