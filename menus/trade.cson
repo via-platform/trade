@@ -1,0 +1,11 @@
+'menu': [
+  {
+    'label': 'View'
+    'submenu': [
+      'label': 'Components'
+      'submenu': [
+        { 'label': 'Execute Trades', 'command': 'trade:create-trade' }
+      ]
+    ]
+  }
+]
