@@ -9,3 +9,8 @@
     ]
   }
 ]
+
+'context-menu':
+  '.symbol-explorer .market': [
+    {label: 'Open Trade Window', command: 'trade:create-trade'}
+  ]
