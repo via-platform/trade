@@ -113,6 +113,28 @@
         color: @text-color-subtle;
         margin-bottom: 6px;
         padding: 0 2px;
+
+        &.split
+        {
+            display: flex;
+
+            div
+            {
+                flex: 1;
+            }
+        }
+
+        .error
+        {
+            color: @text-color-error;
+            text-align: right;
+        }
+
+        .warning
+        {
+            color: @text-color-warning;
+            text-align: right;
+        }
     }
 
     .input-unit
@@ -138,15 +160,21 @@
         margin-bottom: 15px;
         color: @text-color-subtle;
 
-        .estimate
+        .estimates
         {
             font-family: @font-family-serif;
             font-weight: 700;
             -webkit-font-smoothing: antialiased;
-            color: #FFF;
+            color: @text-color-subtle;
             font-size: 12px;
             flex: 1;
             text-align: right;
+
+            span
+            {
+                color: @text-color;
+                margin: 0 4px 0 10px;
+            }
         }
     }
 
@@ -154,6 +182,7 @@
     {
         padding: 10px;
         border-bottom: 1px solid @header-border-color;
+        user-select: none;
     }
 
     .balance
@@ -187,6 +216,30 @@
             -webkit-font-smoothing: antialiased;
             color: #FFF;
             font-size: 14px;
+        }
+    }
+
+    .amounts
+    {
+        display: flex;
+        align-items: center;
+
+        .amount
+        {
+            flex: 1;
+        }
+
+        .amount-or
+        {
+            font-size: 12px;
+            color: @text-color-subtle;
+            padding: 19px 10px 0;
+            font-weight: 700;
+        }
+
+        .input-unit
+        {
+            margin-bottom: 0;
         }
     }
 }
