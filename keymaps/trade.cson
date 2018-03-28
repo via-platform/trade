@@ -1,2 +1,6 @@
 '.trade':
   'm': 'trade:change-market'
+
+'.trade .trade-field':
+  'tab': 'trade:focus-next'
+  'shift-tab': 'trade:focus-previous'
