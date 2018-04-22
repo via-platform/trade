@@ -1,32 +1,32 @@
 {
-    "name": "trade",
-    "version": "0.3.3",
-    "description": "Create new orders on Via.",
-    "main": "./lib/main",
-    "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
-    },
-    "keywords": [
-        "via",
-        "trade"
-    ],
-    "repository": "https://github.com/via-platform/trade",
-    "author": "Dakota Gordon",
-    "engines": {
-        "via": "*"
-    },
-    "dependencies": {
-        "etch": "^0.12.7",
-        "underscore-plus": "^1.0.0"
-    },
-    "deserializers": {
-        "Trade": "deserialize"
-    },
-    "consumedServices": {
-        "action-bar": {
-            "versions": {
-                "^0.1.0": "consumeActionBar"
-            }
-        }
+  "name": "trade",
+  "version": "0.3.4",
+  "description": "Create new orders on Via.",
+  "main": "./lib/main",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "via",
+    "trade"
+  ],
+  "repository": "https://github.com/via-platform/trade",
+  "author": "Dakota Gordon",
+  "engines": {
+    "via": "*"
+  },
+  "dependencies": {
+    "etch": "^0.12.7",
+    "underscore-plus": "^1.0.0"
+  },
+  "deserializers": {
+    "Trade": "deserialize"
+  },
+  "consumedServices": {
+    "action-bar": {
+      "versions": {
+        "^0.1.0": "consumeActionBar"
+      }
     }
+  }
 }
