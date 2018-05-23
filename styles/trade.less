@@ -10,6 +10,7 @@
 {
     display: flex;
     flex-direction: column;
+    background: @pane-background-color;
 
     .last-price
     {
@@ -24,6 +25,7 @@
     {
         flex: 1;
         overflow: auto;
+        background: @pane-background-color;
     }
 
     .no-market
@@ -78,7 +80,7 @@
         height: 34px;
         border-radius: 3px;
         border: 0;
-        font-size: 12px;
+        font-size: 11px;
         font-family: @font-family;
 
         &.buy
@@ -166,7 +168,7 @@
             font-weight: 700;
             -webkit-font-smoothing: antialiased;
             color: @text-color-subtle;
-            font-size: 12px;
+            font-size: 11px;
             flex: 1;
             text-align: right;
 
@@ -199,7 +201,7 @@
 
         .currency
         {
-            font-size: 12px;
+            font-size: 11px;
             color: @text-color-subtle;
             font-weight: 500;
         }
@@ -231,7 +233,7 @@
 
         .amount-or
         {
-            font-size: 12px;
+            font-size: 11px;
             color: @text-color-subtle;
             padding: 19px 10px 0;
             font-weight: 700;
