@@ -16,7 +16,7 @@
     {
         flex: 1;
         text-align: right;
-        padding: 0 10px;
+        padding: 0 8px;
         font-size: 11px;
         color: @text-color-subtle;
     }
@@ -38,13 +38,13 @@
 
     .trade-options
     {
-        padding: 10px;
+        padding: 8px;
     }
 
     .trade-side
     {
         display: flex;
-        margin-bottom: 10px;
+        margin-bottom: 8px;
 
         .btn
         {
@@ -66,92 +66,60 @@
         }
     }
 
-    .trade-type
+    .trade-submit
     {
-        width: 100%;
-        margin-bottom: 15px;
-    }
+        display: flex;
+        border-top: 1px solid @header-border-color;
+        padding-top: 8px;
 
-    .trade-execute
-    {
-        width: 100%;
-        font-weight: 700;
-        text-transform: uppercase;
-        height: 34px;
-        border-radius: 3px;
-        border: 0;
-        font-size: 11px;
-        font-family: @font-family;
-
-        &.buy
+        .spacer
         {
-            background-color: @primary-color-up;
-            color: @header-background-color;
+            flex: 1;
         }
 
-        &.sell
+        button
         {
-            background-color: @primary-color-down;
-            color: #FFF;
+            display: block;
         }
 
-        &.invalid
+        &.invalid button
         {
             pointer-events: none;
-            background: @header-border-color;
-            color: @pane-background-color;
+            background: @header-background-color;
+            color: @text-color-subtle;
         }
 
-        &.transmitting
+        &.transmitting button
         {
             opacity: 0.3;
             pointer-events: none;
         }
     }
 
-    .trade-label
+    .trade-execute
     {
-        font-size: 11px;
-        color: @text-color-subtle;
-        margin-bottom: 6px;
-        padding: 0 2px;
-
-        &.split
-        {
-            display: flex;
-
-            div
-            {
-                flex: 1;
-            }
-        }
-
-        .error
-        {
-            color: @text-color-error;
-            text-align: right;
-        }
-
-        .warning
-        {
-            color: @text-color-warning;
-            text-align: right;
-        }
+        // margin-right: 8px;
+        flex: 1;
     }
 
-    .input-unit
+    .input-label
     {
-        margin-bottom: 15px;
+        margin-bottom: 8px;
 
         &:last-child
         {
-            margin-bottom: 5px;
+            margin-bottom: 0;
+        }
+
+        .title
+        {
+            min-width: 80px;
         }
     }
 
     .trade-summary
     {
-        padding: 0 10px 10px;
+        padding: 0 8px 8px;
     }
 
     .trade-estimate
@@ -159,7 +127,7 @@
         font-size: 11px;
         display: flex;
         align-items: center;
-        margin-bottom: 15px;
+        margin-bottom: 8px;
         color: @text-color-subtle;
 
         .estimates
@@ -175,24 +143,27 @@
             span
             {
                 color: @text-color;
-                margin: 0 4px 0 10px;
+                margin: 0 4px 0 8px;
             }
         }
     }
 
     .trade-account
     {
-        padding: 10px;
+        padding: 8px;
         border-bottom: 1px solid @header-border-color;
         user-select: none;
+        -webkit-font-smoothing: antialiased;
     }
 
     .balance
     {
         display: flex;
         align-items: center;
-        margin-bottom: 5px;
-        line-height: 20px;
+        margin-bottom: 4px;
+        line-height: 14px;
+        font-size: 11px;
+        font-weight: 700;
 
         &:last-child
         {
@@ -201,23 +172,12 @@
 
         .currency
         {
-            font-size: 11px;
             color: @text-color-subtle;
-            font-weight: 500;
         }
 
         .ff
         {
             flex: 1;
-        }
-
-        .amount
-        {
-            font-family: @font-family-serif;
-            font-weight: 700;
-            -webkit-font-smoothing: antialiased;
-            color: #FFF;
-            font-size: 14px;
         }
     }
 
@@ -225,6 +185,11 @@
     {
         display: flex;
         align-items: center;
+
+        &:focus-within
+        {
+            background: blue;
+        }
 
         .amount
         {
@@ -235,7 +200,7 @@
         {
             font-size: 11px;
             color: @text-color-subtle;
-            padding: 19px 10px 0;
+            padding: 19px 8px 0;
             font-weight: 700;
         }
 
