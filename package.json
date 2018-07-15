@@ -28,5 +28,17 @@
         "^0.1.0": "consumeActionBar"
       }
     }
+  },
+  "configSchema": {
+    "prefillLimitPrice": {
+      "type": "boolean",
+      "default": true,
+      "description": "Automatically insert the last price into the limit field."
+  },
+    "prefillStopPrice": {
+      "type": "boolean",
+      "default": true,
+      "description": "Automatically insert the last price into the stop field."
+    }
   }
 }

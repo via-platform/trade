@@ -14,3 +14,8 @@
   '.symbol-explorer .market': [
     {label: 'Open Trade Window', command: 'trade:create-trade'}
   ]
+  '.trade .trade-options .trade-limit .title': [
+    {label: 'Last Price', command: 'trade:prefill-last-price'}
+    {label: 'Highest Bid', command: 'trade:prefill-highest-bid'}
+    {label: 'Lowest Ask', command: 'trade:prefill-lowest-ask'}
+  ]
