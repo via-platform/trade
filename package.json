@@ -1,6 +1,6 @@
 {
   "name": "trade",
-  "version": "0.6.1",
+  "version": "0.6.2",
   "description": "Create new orders on Via.",
   "main": "./lib/main",
   "scripts": {
